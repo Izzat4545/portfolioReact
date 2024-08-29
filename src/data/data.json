@@ -1,0 +1,115 @@
+{
+  "experice": [
+    {
+      "fromTo": "Jan 2024 - Mar 2024",
+      "companyName": "Single integrator - UZINFOCOM LLC",
+      "companyWebsite": "https://uzinfocom.uz/uz",
+      "role": "Frontend Engineer",
+      "position": "Internship",
+      "content": "<li>During my internship, I delved into a new framework unfamiliar to me: Angular. Immersed in this technology, I navigated through the intricacies of Angular and contributed to a substantial projects. This experience not only broadened my skill set but also provided me with valuable insights into the complexities of modern web development.</li>",
+      "tools": ["Angular", "Bootstrap", "Git", "Gitlab", "Figma"],
+      "compleatedProjects": []
+    },
+    {
+      "fromTo": "Dec 2023 - Jan 2024",
+      "companyName": "Itransition Group",
+      "companyWebsite": "https://www.itransition.com/",
+      "role": "Frontend Engineer",
+      "position": "Internship",
+      "content": "<li>Acquired proficiency in state management methodologies throughout the course of the internship, acquired foundational knowledge of Node.js, and developed a more comprehensive understanding of React.js.</li>",
+      "tools": ["React.js", "Node.js", "Git", "GitHub", "Redux.js"],
+      "compleatedProjects": []
+    },
+    {
+      "fromTo": "Nov 2023 - Jan 2024",
+      "role": "Frontend Engineer",
+      "companyName": "Next Level Group",
+      "companyWebsite": "https://nextlevelgroup.uz/",
+      "position": "Internship",
+      "content": "<li>Optimized platform performance to enhance user experience</li> <li>Implemented innovative features to enrich the platform's capabilities</li> <li>Proactively analyzed and addressed potential issues for continuous improvement</li><li>Fostered effective collaboration with cross-functional teams for seamless integration</li>",
+      "tools": [
+        "Next js",
+        "Js",
+        "TypeScript",
+        "React.js",
+        "GitHub",
+        "Git",
+        "Redux.js",
+        "REST APIs",
+        "CSS",
+        "Tailwind CSS",
+        "Framer motion"
+      ],
+      "compleatedProjects": ["melagrana.uz"]
+    },
+    {
+      "fromTo": "Dec 2022 - Jun 2023",
+      "role": "QA Automation Engineer",
+      "companyName": "a1qa",
+      "companyWebsite": "https://www.a1qa.com/",
+      "position": "Internship",
+      "content": "<li>Gained a deep understanding and proficiency in applying advanced OOP principles.</li><li>Developed comfort and proficiency in utilizing Java for testing various types of web interfaces.</li><li>Acquired skills in testing APIs using Java.</li><li>Learned the essential concepts and practices of Continuous Integration/Continuous Deployment (CI/CD) and Docker.</li>",
+      "tools": [
+        "API Testing",
+        "Jenkins",
+        "GitHub",
+        "Git",
+        "Docker",
+        "Java",
+        "Selenium"
+      ],
+      "compleatedProjects": []
+    }
+  ],
+  "projects": [
+    {
+      "title": "Melagrana online store",
+      "projectLink": "https://melagrana.uz/",
+      "content": "I dedicated over one and a half months to the development of this project, which resulted in the creation of a fully functional online store. This platform allows users to make purchases using the Payme payment system. The technologies employed in this project include Next.js, Tailwind CSS, Redux Toolkit, Framer Motion, and TypeScript.",
+      "tools": [
+        "Next js",
+        "TypeScript",
+        "React.js",
+        "GitHub",
+        "Git",
+        "Redux.js",
+        "REST APIs",
+        "CSS",
+        "Tailwind CSS",
+        "Framer motion"
+      ]
+    },
+    {
+      "title": "To do app",
+      "projectLink": "https://todo-nams.vercel.app",
+      "content": "In this Vue.js pet project, I have developed a fully functional to-do application tailored to enhance users' daily task organization. The project seamlessly integrates with Firebase, leveraging its API and database to manage tasks efficiently. An authentication system has been implemented to ensure secure user access, fostering a personalized and secure task management experience. Users can effortlessly add, delete, and update tasks through an intuitive interface, creating a practical and responsive solution. The project highlights my proficiency in Vue.js, Firebase integration, and my commitment to delivering user-centric applications.",
+      "tools": [
+        "Vue js",
+        "Pinia vuejs",
+        "TypeScript",
+        "GitHub",
+        "Git",
+        "REST APIs",
+        "Firebase",
+        "CSS",
+        "Tailwind CSS",
+        "Daisy UI"
+      ]
+    },
+    {
+      "title": "Quiz App",
+      "projectLink": "https://quiz-app-izzat4545.vercel.app",
+      "content": "In this Angular pet project, I have developed a fully functional Quiz-app which heavily relies on the firebase as backend. Use admin@gmail.com, 123456 to login as admin and feel free to modify and add question as you wish.",
+      "tools": [
+        "Angular",
+        "TypeScript",
+        "GitHub",
+        "Git",
+        "REST APIs",
+        "Firebase",
+        "CSS",
+        "Tailwind CSS"
+      ]
+    }
+  ]
+}

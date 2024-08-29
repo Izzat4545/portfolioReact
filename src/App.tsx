@@ -1,35 +1,49 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useState } from "react";
+import "./App.css";
+import LeftSection from "./components/leftSection";
+import RightSection from "./components/rightSection";
 
+interface GradientPosition {
+  x: number;
+  y: number;
+}
 function App() {
-  const [count, setCount] = useState(0)
+  const [gradientPosition, setGradientPosition] = useState<GradientPosition>({
+    x: 0,
+    y: 0,
+  });
+
+  useEffect(() => {
+    const updateGradientPosition = (event: MouseEvent) => {
+      setGradientPosition({ x: event.clientX, y: event.clientY });
+    };
+
+    // Apply radial gradient and background color to the body if the screen width is greater than or equal to 1024px
+    if (window.innerWidth >= 1024) {
+      document.body.style.background = `radial-gradient(600px at ${gradientPosition.x}px ${gradientPosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%) #0f172a`;
+      document.body.style.backgroundAttachment = "fixed"; // or "scroll" depending on your preference
+    }
+
+    // Add event listener for mousemove
+    document.addEventListener("mousemove", updateGradientPosition);
+
+    // Cleanup on component unmount
+    return () => {
+      // Remove the event listener
+      document.removeEventListener("mousemove", updateGradientPosition);
+
+      // Reset styles
+      document.body.style.background = "";
+      document.body.style.backgroundAttachment = "";
+    };
+  }, [gradientPosition]);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:py-0 lg:px-24 lg:flex lg:justify-between lg:gap-4 relative">
+      <LeftSection />
+      <RightSection />
+    </div>
+  );
 }
 
-export default App
+export default App;
